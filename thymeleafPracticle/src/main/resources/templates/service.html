@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>Services page</title>
+</head>
+<body>
+	<h1>This is service page</h1>
+	<!-- going to bring footer here -->
+	<!-- <footer id="hostTag" th:replace="footer::footer1"> -->     <!-- Like this way we can similarly use 'insert' or 'include' 
+	(if we don't have parameter then we use like this)-->
+	
+	<!-- <footer id="hostTag" th:replace="footer::footer1('This is Title','This is sub Tiltle')"> --><!--if we have parameter then we use like this  -->
+	
+	<footer id="hostTag" th:replace="footer::footer1(${title},${subTitle})">
+	</footer>
+</body>
+</html>

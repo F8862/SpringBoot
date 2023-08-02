@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;smartContactManager/src/main/resources/static/img/user.png&apos; to &apos;default.png&apos;" description="Rename resource &apos;user.png&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/static/img/user.png" name="default.png" stamp="1687585944584" updateReferences="true"/>
+</session>

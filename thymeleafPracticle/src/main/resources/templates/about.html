@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+</head>
+<body>
+	<h1>About learn code for</h1>
+	<h1 th:text="${name}"></h1>
+	<h1 th:text="${#strings.toUpperCase(name)}"></h1>
+	<p>Length of the name is <span th:text="${#strings.length(name)}"></span></p>
+	<h1 th:text="${CurrentDate}"></h1>
+	<h2>Name of the owner is <span th:text="${name}"></span></h2>
+	
+	<!-- we can use local variable and that local variable will be use within that div only-->
+	<div th:with="a=5,b=7,n=${name}">
+	<h1>value of a is <span th:text="${a}"></span></h1>
+	<h1 th:text="'value of b is'+${b}"></h1>
+	<h1>Local value of n is <span th:text="${n}"></span></h1>
+	<h2 th:text="'sum of a and b is'+${a+b}"></h2>
+	</div>
+	
+</body>
+</html>

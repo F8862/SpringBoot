@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>Footer Template</title>
+</head>
+<body>
+    <!-- <footer id="fragmentTag" th:fragment="footer1"> -->
+    <footer id="fragmentTag" th:fragment="footer1(title,subTiltle)"><!-- like this way we can use parameters -->
+	<div class="container">
+	<h1 th:text="${title}"></h1>
+	<h1 th:text="${subTiltle}"></h1>
+	<h1>About learn code with me</h1>
+	<h2>Provide good content about programming</h2>
+	<h1>Feel free to access it</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum dolorem animi cum enim magnam dolore officia labore iste voluptates eum nisi voluptatem consequatur repellat. Ipsa vel impedit placeat maiores doloribus molestias neque quaerat sit rem omnis fugit quod soluta vitae molestiae sunt atque labore magni accusamus consequatur illum. Enim officiis.</p>
+	</div>
+	</footer>
+</body>
+</html>
